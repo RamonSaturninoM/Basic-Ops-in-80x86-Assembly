@@ -1,0 +1,53 @@
+Microsoft (R) Macro Assembler (x64) Version 14.38.33133.0   01/27/24 17:05:22
+example.asm						     Page 1 - 1
+
+
+				; Explain what this program does
+				; Author:  Your name
+				; Date:    put teh date
+
+
+ 00000000			.DATA
+ 00000000			number  QWORD   -105
+	   FFFFFFFFFFFFFF97
+ 00000008			sum     QWORD   ?
+	   0000000000000000
+
+ 00000000			.CODE
+ 00000000			main    PROC
+ 00000000  48/ 8B 05		        mov     rax, number     ; first number to EAX
+	   00000000 R
+ 00000007  48/ 05		        add     rax, 158        ; add 158
+	   0000009E
+ 0000000D  48/ 89 05		        mov     sum, rax        ; sum to memory
+	   00000008 R
+
+ 00000014  48/ C7 C0		        mov     rax, 0          ; return code
+	   00000000
+ 0000001B  C3			        ret                     ; exit to operating system
+				        
+ 0000001C			main    ENDP
+
+				END
+Microsoft (R) Macro Assembler (x64) Version 14.38.33133.0   01/27/24 17:05:22
+example.asm						     Symbols 2 - 1
+
+
+
+
+Procedures, parameters, and locals:
+
+                N a m e                 Type     Value    Attr
+
+main . . . . . . . . . . . . . .	P 	 00000000 _TEXT	Length= 0000001C Public
+
+
+Symbols:
+
+                N a m e                 Type     Value    Attr
+
+number . . . . . . . . . . . . .	QWord	 00000000 _DATA	
+sum  . . . . . . . . . . . . . .	QWord	 00000008 _DATA	
+
+	   0 Warnings
+	   0 Errors
